@@ -1,0 +1,21 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid 7b4001c9-2699-4735-82b5-705053655a33)
+	(paper "A3")
+	(title_block
+		(title "PCH")
+		(date "2026-11-10")
+		(rev "A")
+		(company "BestLaptopBuild")
+		(comment 1 "C226/Z97-class PCH, SATA, USB, HDA, SMBus, LPC")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

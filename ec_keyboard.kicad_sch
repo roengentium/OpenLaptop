@@ -1,0 +1,21 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid 8b0437b5-8dcd-4d1f-ad92-fcbe995d256b)
+	(paper "A3")
+	(title_block
+		(title "EC_Keyboard")
+		(date "2026-11-10")
+		(rev "A")
+		(company "BestLaptopBuild")
+		(comment 1 "Embedded controller, keyboard, touchpad, fan")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

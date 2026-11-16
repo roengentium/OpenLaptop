@@ -1,0 +1,699 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid 37d3b3b1-ed71-45b6-86f1-0f4da120c1f5)
+	(paper "A3")
+	(title_block
+		(title "BestLaptopBuild")
+		(date "2026-11-10")
+		(rev "A")
+		(company "BestLaptopBuild")
+		(comment 1 "Top level - hierarchical subsystem sheets")
+	)
+	(lib_symbols)
+	(text "BestLaptopBuild - top level. Working assumptions (revise as decisions firm up):"
+		(exclude_from_sim no)
+		(at 30 25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid ddd2acaf-25f8-4143-84ff-9a3002ad29e9)
+	)
+	(text "Compute: COM Express Type 6 module (Haswell-era Intel) on custom carrier - OPEN: module choice + firmware compat"
+		(exclude_from_sim no)
+		(at 30 31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 2ed47530-213d-469c-93be-67ad5c02477d)
+	)
+	(text "RAM: on module | GPU: MXM 3.1 Type B (Polaris) on module PEG x16 | FW: module vendor UEFI/CSM"
+		(exclude_from_sim no)
+		(at 30 37 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid 5cad9d4f-cf41-41f4-b37d-7fffa691f80c)
+	)
+	(text "Hackintosh: Intel iGPU headless or mux, swappable Broadcom Wi-Fi/BT M.2, PS2/I2C input"
+		(exclude_from_sim no)
+		(at 30 43 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid fe4753a0-0683-4cdd-adc7-b647d279c1cd)
+	)
+	(sheet
+		(at 30 60)
+		(size 90 25)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid 421aa19c-6719-474c-9175-555d53fdc066)
+		(property "Sheetname" "COMe_Module"
+			(at 30 59.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "come_module.kicad_sch"
+			(at 30 85.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V_AUX" input
+			(at 120 62.23 0)
+			(uuid 15749103-975f-4190-8fa9-0575b25894ab)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "VSYS" input
+			(at 120 66.04 0)
+			(uuid 34954f69-aa08-454c-a15e-6210ba007d49)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(instances
+			(project "Laptop"
+				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30 105)
+		(size 90 25)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid 33dea6a5-83b2-4e53-86d5-ecbcf98e40dc)
+		(property "Sheetname" "MXM_GPU"
+			(at 30 104.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mxm_gpu.kicad_sch"
+			(at 30 130.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Laptop"
+				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 150 105)
+		(size 90 25)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid 66b5c983-330a-46a7-8bb5-ca5451e15ac0)
+		(property "Sheetname" "Display_Mux"
+			(at 150 104.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "display_mux.kicad_sch"
+			(at 150 130.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Laptop"
+				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 270 105)
+		(size 90 25)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid 0672c84d-3e27-4db3-a129-8f70af94761a)
+		(property "Sheetname" "Storage_SATA"
+			(at 270 104.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "storage_sata.kicad_sch"
+			(at 270 130.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Laptop"
+				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30 150)
+		(size 90 25)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid 98425392-739c-4b72-a66f-92e4d147e688)
+		(property "Sheetname" "Firmware_SPI"
+			(at 30 149.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "firmware_spi.kicad_sch"
+			(at 30 175.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Laptop"
+				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 150 150)
+		(size 90 25)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid 3fcda434-c77c-44d6-b6ac-5ce96bb2905f)
+		(property "Sheetname" "EC_Keyboard"
+			(at 150 149.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ec_keyboard.kicad_sch"
+			(at 150 175.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Laptop"
+				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 270 150)
+		(size 90 25)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid ac83ed26-e18f-4c3f-bd4a-daf1f50fcd97)
+		(property "Sheetname" "IO_Peripherals"
+			(at 270 149.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "io_peripherals.kicad_sch"
+			(at 270 175.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Laptop"
+				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30 195)
+		(size 90 60)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid 6908e060-a0a9-4ade-84ad-e1dcdfb705d0)
+		(property "Sheetname" "Power_Input_Charger"
+			(at 30 194.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_input_charger.kicad_sch"
+			(at 30 255.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VSYS" output
+			(at 120 196.85 0)
+			(uuid 74e218dc-4177-4434-a703-7a1bb253d9bc)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "SMB_SDA" bidirectional
+			(at 120 200.66 0)
+			(uuid 54296b1b-1c5d-410e-aac6-cc067d8b721a)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "SMB_SCL" bidirectional
+			(at 120 204.47 0)
+			(uuid eb5dd85f-549b-4ef3-a155-547ef722a520)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "AC_OK" output
+			(at 120 208.28 0)
+			(uuid 5a04b306-587e-4170-a4cc-6077db7af1b0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "BAT_NTC" output
+			(at 120 212.09 0)
+			(uuid cc1928ea-d4be-4830-aa8e-bf13cf39fd4f)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "BAT_PRES" output
+			(at 120 215.9 0)
+			(uuid 854dac73-3e45-49a0-aad2-5e6f1d0aed2d)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "PROCHOT" bidirectional
+			(at 120 219.71 0)
+			(uuid b01b8240-fdfe-48b7-a326-615e538b31d8)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "TB_STAT" output
+			(at 120 223.52 0)
+			(uuid a1e7a437-416e-4a1c-a4a1-c62a7c4d88fb)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "+3V3_AUX" input
+			(at 120 227.33 0)
+			(uuid 6f755a8b-9183-4d51-812b-e8a6e5b5aa11)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(instances
+			(project "Laptop"
+				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
+					(page "11")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 150 195)
+		(size 90 85)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid 93ba10c1-b045-4bd9-a393-d22cab8b79bd)
+		(property "Sheetname" "Power_Rails"
+			(at 150 194.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power_rails.kicad_sch"
+			(at 150 280.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "VSYS" input
+			(at 240 196.85 0)
+			(uuid 02bc99ac-3b8e-4b8f-9f14-56224284a799)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "AUX_EN" input
+			(at 240 200.66 0)
+			(uuid b1c78fef-6179-401d-a421-b277c544dfe0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "EN_S3" input
+			(at 240 204.47 0)
+			(uuid aa4d38e6-027f-43c1-8fe9-d3417a853df0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "EN_S0" input
+			(at 240 208.28 0)
+			(uuid c514c754-cb4f-465f-b6bd-5b7760968a9b)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "+5V_AUX" output
+			(at 240 212.09 0)
+			(uuid f857ce8e-147e-46f4-ae6a-8f790e276c02)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "+3V3_AUX" output
+			(at 240 215.9 0)
+			(uuid 26f1bf34-6483-493d-bf75-92fc10853440)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "+5V" output
+			(at 240 219.71 0)
+			(uuid 4edba203-1238-4401-a0fe-63780891fb6a)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "+3V3" output
+			(at 240 223.52 0)
+			(uuid 8373383e-a74d-44b1-ba34-370b55649962)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "+1V35_DDR" output
+			(at 240 227.33 0)
+			(uuid 22c8f5c6-77c1-4af9-a0e9-9d22216f32e4)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "+0V675_VTT" output
+			(at 240 231.14 0)
+			(uuid b19121ff-7ab3-42ca-ac0f-193248b13dd0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "+1V05_VCCIO" output
+			(at 240 234.95 0)
+			(uuid e666ab45-53b0-4cc6-9262-53f8e360d2e2)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "+VCCSA" output
+			(at 240 238.76 0)
+			(uuid 7bb1f08e-1dd9-4d54-8137-cb6b98ae5b36)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "+VCCIN" output
+			(at 240 242.57 0)
+			(uuid 001b38f3-4375-427b-90a3-6af8c4bec28e)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "PG_AUX" output
+			(at 240 246.38 0)
+			(uuid a729e67d-db0d-4582-a8cf-4320f669a574)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "PG_DDR" output
+			(at 240 250.19 0)
+			(uuid 9c73e737-5eee-469f-a41a-abbf78429f5c)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "PG_VCCIO" output
+			(at 240 254.0 0)
+			(uuid 119f4fb6-4fdc-4a32-bd9a-635cedfe53a9)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "PG_VCCSA" output
+			(at 240 257.81 0)
+			(uuid 80151754-343c-429a-995b-206747e28cce)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "PG_VCCIN" output
+			(at 240 261.62 0)
+			(uuid 23ace990-f592-4e05-b241-55d85595cb6a)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "SVID_CLK" input
+			(at 240 265.43 0)
+			(uuid 820e1422-e28f-463a-b21c-68f09b8cfeae)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "SVID_DATA" bidirectional
+			(at 240 269.24 0)
+			(uuid d5171856-8c6d-4983-9d4d-99830326bcdd)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "SVID_ALERT" output
+			(at 240 273.05 0)
+			(uuid 108561df-b88a-408a-9f4e-c12d48f211a3)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(instances
+			(project "Laptop"
+				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

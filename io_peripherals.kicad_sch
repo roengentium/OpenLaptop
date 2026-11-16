@@ -1,0 +1,21 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid 28ba7692-3997-400c-ac0a-4642c9395910)
+	(paper "A3")
+	(title_block
+		(title "IO_Peripherals")
+		(date "2026-11-10")
+		(rev "A")
+		(company "BestLaptopBuild")
+		(comment 1 "USB, audio codec, LAN, Wi-Fi/BT M.2, card reader")
+	)
+	(lib_symbols)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
