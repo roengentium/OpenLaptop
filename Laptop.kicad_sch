@@ -116,7 +116,7 @@
 	)
 	(sheet
 		(at 30 105)
-		(size 90 25)
+		(size 90 40)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -140,12 +140,76 @@
 			)
 		)
 		(property "Sheetfile" "mxm_gpu.kicad_sch"
-			(at 30 130.7 0)
+			(at 30 145.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
+			)
+		)
+		(pin "+3V3" input
+			(at 120 107.54 0)
+			(uuid cc339338-bfbe-454d-86a2-5ea7efaf4913)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "+5V" input
+			(at 120 111.35 0)
+			(uuid 78d281d1-5445-4f1c-b1a6-40aa7a5b9f2d)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "PWR_EN" bidirectional
+			(at 120 115.16 0)
+			(uuid 0200bdf3-d0e7-4ed9-8330-c4f2a076e9e2)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "PWR_GOOD" bidirectional
+			(at 120 118.97 0)
+			(uuid 21f3ed23-4153-4be2-99da-080c2785d9b0)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "VSYS" input
+			(at 120 122.78 0)
+			(uuid 66e86f38-fcfa-4e92-a918-b530caf21802)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "SMB_CLK" bidirectional
+			(at 120 126.59 0)
+			(uuid 3b1e950e-615c-4715-97a4-69458e2da91c)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "SMB_DAT" bidirectional
+			(at 120 130.4 0)
+			(uuid f33393f9-e83c-4387-a192-6b0f152f6628)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
+			)
+		)
+		(pin "PEX_RST#" input
+			(at 120 134.21 0)
+			(uuid 5d88abf4-e694-4f7a-b03f-bfffeef69646)
+			(effects
+				(font (size 1.27 1.27))
+				(justify right)
 			)
 		)
 		(instances
@@ -482,7 +546,7 @@
 	)
 	(sheet
 		(at 150 195)
-		(size 90 85)
+		(size 90 60)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -506,7 +570,7 @@
 			)
 		)
 		(property "Sheetfile" "power_rails.kicad_sch"
-			(at 150 280.7 0)
+			(at 150 255.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -516,7 +580,7 @@
 		)
 		(pin "VSYS" input
 			(at 240 196.85 0)
-			(uuid 02bc99ac-3b8e-4b8f-9f14-56224284a799)
+			(uuid bfa5ab10-c650-4225-b405-131defc686f9)
 			(effects
 				(font (size 1.27 1.27))
 				(justify right)
@@ -524,159 +588,63 @@
 		)
 		(pin "AUX_EN" input
 			(at 240 200.66 0)
-			(uuid b1c78fef-6179-401d-a421-b277c544dfe0)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "EN_S3" input
-			(at 240 204.47 0)
-			(uuid aa4d38e6-027f-43c1-8fe9-d3417a853df0)
+			(uuid f5bde135-1455-46f9-8407-0735e92fbee7)
 			(effects
 				(font (size 1.27 1.27))
 				(justify right)
 			)
 		)
 		(pin "EN_S0" input
-			(at 240 208.28 0)
-			(uuid c514c754-cb4f-465f-b6bd-5b7760968a9b)
+			(at 240 204.47 0)
+			(uuid f70eec34-cc6b-4412-a868-01badb682872)
 			(effects
 				(font (size 1.27 1.27))
 				(justify right)
 			)
 		)
 		(pin "+5V_AUX" output
-			(at 240 212.09 0)
-			(uuid f857ce8e-147e-46f4-ae6a-8f790e276c02)
+			(at 240 208.28 0)
+			(uuid d8325ed5-e928-4530-9bc1-05121a588484)
 			(effects
 				(font (size 1.27 1.27))
 				(justify right)
 			)
 		)
 		(pin "+3V3_AUX" output
-			(at 240 215.9 0)
-			(uuid 26f1bf34-6483-493d-bf75-92fc10853440)
+			(at 240 212.09 0)
+			(uuid 839ab7a6-cd54-4e90-8451-5dcfb3c60331)
 			(effects
 				(font (size 1.27 1.27))
 				(justify right)
 			)
 		)
 		(pin "+5V" output
-			(at 240 219.71 0)
-			(uuid 4edba203-1238-4401-a0fe-63780891fb6a)
+			(at 240 215.9 0)
+			(uuid 03eac2a4-4965-43c5-a9ab-a8082bd3850d)
 			(effects
 				(font (size 1.27 1.27))
 				(justify right)
 			)
 		)
 		(pin "+3V3" output
-			(at 240 223.52 0)
-			(uuid 8373383e-a74d-44b1-ba34-370b55649962)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "+1V35_DDR" output
-			(at 240 227.33 0)
-			(uuid 22c8f5c6-77c1-4af9-a0e9-9d22216f32e4)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "+0V675_VTT" output
-			(at 240 231.14 0)
-			(uuid b19121ff-7ab3-42ca-ac0f-193248b13dd0)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "+1V05_VCCIO" output
-			(at 240 234.95 0)
-			(uuid e666ab45-53b0-4cc6-9262-53f8e360d2e2)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "+VCCSA" output
-			(at 240 238.76 0)
-			(uuid 7bb1f08e-1dd9-4d54-8137-cb6b98ae5b36)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "+VCCIN" output
-			(at 240 242.57 0)
-			(uuid 001b38f3-4375-427b-90a3-6af8c4bec28e)
+			(at 240 219.71 0)
+			(uuid 4592ce14-2e86-45ae-a747-86d3f3b6403a)
 			(effects
 				(font (size 1.27 1.27))
 				(justify right)
 			)
 		)
 		(pin "PG_AUX" output
-			(at 240 246.38 0)
-			(uuid a729e67d-db0d-4582-a8cf-4320f669a574)
+			(at 240 223.52 0)
+			(uuid 04d095d4-8bb1-4e54-99d5-c3af6e790068)
 			(effects
 				(font (size 1.27 1.27))
 				(justify right)
 			)
 		)
-		(pin "PG_DDR" output
-			(at 240 250.19 0)
-			(uuid 9c73e737-5eee-469f-a41a-abbf78429f5c)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "PG_VCCIO" output
-			(at 240 254.0 0)
-			(uuid 119f4fb6-4fdc-4a32-bd9a-635cedfe53a9)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "PG_VCCSA" output
-			(at 240 257.81 0)
-			(uuid 80151754-343c-429a-995b-206747e28cce)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "PG_VCCIN" output
-			(at 240 261.62 0)
-			(uuid 23ace990-f592-4e05-b241-55d85595cb6a)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "SVID_CLK" input
-			(at 240 265.43 0)
-			(uuid 820e1422-e28f-463a-b21c-68f09b8cfeae)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "SVID_DATA" bidirectional
-			(at 240 269.24 0)
-			(uuid d5171856-8c6d-4983-9d4d-99830326bcdd)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "SVID_ALERT" output
-			(at 240 273.05 0)
-			(uuid 108561df-b88a-408a-9f4e-c12d48f211a3)
+		(pin "PG_5V" output
+			(at 240 227.33 0)
+			(uuid 9aaf87aa-a9ad-4bec-967b-242bec650f58)
 			(effects
 				(font (size 1.27 1.27))
 				(justify right)
