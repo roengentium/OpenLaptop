@@ -14,7 +14,7 @@
 	(lib_symbols)
 	(text "BestLaptopBuild - top level. Working assumptions (revise as decisions firm up):"
 		(exclude_from_sim no)
-		(at 30 25 0)
+		(at 30 255 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -25,7 +25,7 @@
 	)
 	(text "Compute: COM Express Type 6 module (Haswell-era Intel) on custom carrier - OPEN: module choice + firmware compat"
 		(exclude_from_sim no)
-		(at 30 31 0)
+		(at 30 261 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -36,7 +36,7 @@
 	)
 	(text "RAM: on module | GPU: MXM 3.1 Type B (Polaris) on module PEG x16 | FW: module vendor UEFI/CSM"
 		(exclude_from_sim no)
-		(at 30 37 0)
+		(at 30 267 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -47,7 +47,7 @@
 	)
 	(text "Hackintosh: Intel iGPU headless or mux, swappable Broadcom Wi-Fi/BT M.2, PS2/I2C input"
 		(exclude_from_sim no)
-		(at 30 43 0)
+		(at 30 273 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -90,22 +90,6 @@
 				(justify left top)
 			)
 		)
-		(pin "+5V_AUX" input
-			(at 120 62.23 0)
-			(uuid 15749103-975f-4190-8fa9-0575b25894ab)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "VSYS" input
-			(at 120 66.04 0)
-			(uuid 34954f69-aa08-454c-a15e-6210ba007d49)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
 		(instances
 			(project "Laptop"
 				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
@@ -115,8 +99,8 @@
 		)
 	)
 	(sheet
-		(at 30 105)
-		(size 90 40)
+		(at 150 60)
+		(size 90 25)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -131,7 +115,7 @@
 		)
 		(uuid 33dea6a5-83b2-4e53-86d5-ecbcf98e40dc)
 		(property "Sheetname" "MXM_GPU"
-			(at 30 104.3 0)
+			(at 150 59.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -140,7 +124,7 @@
 			)
 		)
 		(property "Sheetfile" "mxm_gpu.kicad_sch"
-			(at 30 145.7 0)
+			(at 150 85.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -148,74 +132,94 @@
 				(justify left top)
 			)
 		)
-		(pin "+3V3" input
-			(at 120 107.54 0)
-			(uuid cc339338-bfbe-454d-86a2-5ea7efaf4913)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
+		(instances
+			(project "Laptop"
+				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
+					(page "5")
+				)
 			)
 		)
-		(pin "+5V" input
-			(at 120 111.35 0)
-			(uuid 78d281d1-5445-4f1c-b1a6-40aa7a5b9f2d)
+	)
+	(sheet
+		(at 270 60)
+		(size 90 25)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid 66b5c983-330a-46a7-8bb5-ca5451e15ac0)
+		(property "Sheetname" "Display"
+			(at 270 59.3 0)
 			(effects
-				(font (size 1.27 1.27))
-				(justify right)
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
 			)
 		)
-		(pin "PWR_EN" bidirectional
-			(at 120 115.16 0)
-			(uuid 0200bdf3-d0e7-4ed9-8330-c4f2a076e9e2)
+		(property "Sheetfile" "display_mux.kicad_sch"
+			(at 270 85.7 0)
 			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "PWR_GOOD" bidirectional
-			(at 120 118.97 0)
-			(uuid 21f3ed23-4153-4be2-99da-080c2785d9b0)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "VSYS" input
-			(at 120 122.78 0)
-			(uuid 66e86f38-fcfa-4e92-a918-b530caf21802)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "SMB_CLK" bidirectional
-			(at 120 126.59 0)
-			(uuid 3b1e950e-615c-4715-97a4-69458e2da91c)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "SMB_DAT" bidirectional
-			(at 120 130.4 0)
-			(uuid f33393f9-e83c-4387-a192-6b0f152f6628)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "PEX_RST#" input
-			(at 120 134.21 0)
-			(uuid 5d88abf4-e694-4f7a-b03f-bfffeef69646)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 			)
 		)
 		(instances
 			(project "Laptop"
 				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
-					(page "5")
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 30 105)
+		(size 90 25)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid 0672c84d-3e27-4db3-a129-8f70af94761a)
+		(property "Sheetname" "Storage_SATA"
+			(at 30 104.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "storage_sata.kicad_sch"
+			(at 30 130.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "Laptop"
+				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
+					(page "7")
 				)
 			)
 		)
@@ -235,8 +239,8 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid 66b5c983-330a-46a7-8bb5-ca5451e15ac0)
-		(property "Sheetname" "Display_Mux"
+		(uuid 98425392-739c-4b72-a66f-92e4d147e688)
+		(property "Sheetname" "Firmware_SPI"
 			(at 150 104.3 0)
 			(effects
 				(font
@@ -245,7 +249,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "display_mux.kicad_sch"
+		(property "Sheetfile" "firmware_spi.kicad_sch"
 			(at 150 130.7 0)
 			(effects
 				(font
@@ -257,7 +261,7 @@
 		(instances
 			(project "Laptop"
 				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
-					(page "6")
+					(page "8")
 				)
 			)
 		)
@@ -277,8 +281,8 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid 0672c84d-3e27-4db3-a129-8f70af94761a)
-		(property "Sheetname" "Storage_SATA"
+		(uuid 3fcda434-c77c-44d6-b6ac-5ce96bb2905f)
+		(property "Sheetname" "EC_Keyboard"
 			(at 270 104.3 0)
 			(effects
 				(font
@@ -287,7 +291,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "storage_sata.kicad_sch"
+		(property "Sheetfile" "ec_keyboard.kicad_sch"
 			(at 270 130.7 0)
 			(effects
 				(font
@@ -299,7 +303,7 @@
 		(instances
 			(project "Laptop"
 				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
-					(page "7")
+					(page "9")
 				)
 			)
 		)
@@ -319,8 +323,8 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid 98425392-739c-4b72-a66f-92e4d147e688)
-		(property "Sheetname" "Firmware_SPI"
+		(uuid ac83ed26-e18f-4c3f-bd4a-daf1f50fcd97)
+		(property "Sheetname" "IO_Peripherals"
 			(at 30 149.3 0)
 			(effects
 				(font
@@ -329,7 +333,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "firmware_spi.kicad_sch"
+		(property "Sheetfile" "io_peripherals.kicad_sch"
 			(at 30 175.7 0)
 			(effects
 				(font
@@ -341,7 +345,7 @@
 		(instances
 			(project "Laptop"
 				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
-					(page "8")
+					(page "10")
 				)
 			)
 		)
@@ -361,8 +365,8 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid 3fcda434-c77c-44d6-b6ac-5ce96bb2905f)
-		(property "Sheetname" "EC_Keyboard"
+		(uuid 6908e060-a0a9-4ade-84ad-e1dcdfb705d0)
+		(property "Sheetname" "Power_Input_Charger"
 			(at 150 149.3 0)
 			(effects
 				(font
@@ -371,7 +375,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "ec_keyboard.kicad_sch"
+		(property "Sheetfile" "power_input_charger.kicad_sch"
 			(at 150 175.7 0)
 			(effects
 				(font
@@ -383,7 +387,7 @@
 		(instances
 			(project "Laptop"
 				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
-					(page "9")
+					(page "11")
 				)
 			)
 		)
@@ -403,8 +407,8 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid ac83ed26-e18f-4c3f-bd4a-daf1f50fcd97)
-		(property "Sheetname" "IO_Peripherals"
+		(uuid 93ba10c1-b045-4bd9-a393-d22cab8b79bd)
+		(property "Sheetname" "Power_Rails"
 			(at 270 149.3 0)
 			(effects
 				(font
@@ -413,241 +417,13 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "io_peripherals.kicad_sch"
+		(property "Sheetfile" "power_rails.kicad_sch"
 			(at 270 175.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-			)
-		)
-		(instances
-			(project "Laptop"
-				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
-					(page "10")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 30 195)
-		(size 90 60)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid 6908e060-a0a9-4ade-84ad-e1dcdfb705d0)
-		(property "Sheetname" "Power_Input_Charger"
-			(at 30 194.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "power_input_charger.kicad_sch"
-			(at 30 255.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "VSYS" output
-			(at 120 196.85 0)
-			(uuid 74e218dc-4177-4434-a703-7a1bb253d9bc)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "SMB_SDA" bidirectional
-			(at 120 200.66 0)
-			(uuid 54296b1b-1c5d-410e-aac6-cc067d8b721a)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "SMB_SCL" bidirectional
-			(at 120 204.47 0)
-			(uuid eb5dd85f-549b-4ef3-a155-547ef722a520)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "AC_OK" output
-			(at 120 208.28 0)
-			(uuid 5a04b306-587e-4170-a4cc-6077db7af1b0)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "BAT_NTC" output
-			(at 120 212.09 0)
-			(uuid cc1928ea-d4be-4830-aa8e-bf13cf39fd4f)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "BAT_PRES" output
-			(at 120 215.9 0)
-			(uuid 854dac73-3e45-49a0-aad2-5e6f1d0aed2d)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "PROCHOT" bidirectional
-			(at 120 219.71 0)
-			(uuid b01b8240-fdfe-48b7-a326-615e538b31d8)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "TB_STAT" output
-			(at 120 223.52 0)
-			(uuid a1e7a437-416e-4a1c-a4a1-c62a7c4d88fb)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "+3V3_AUX" input
-			(at 120 227.33 0)
-			(uuid 6f755a8b-9183-4d51-812b-e8a6e5b5aa11)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(instances
-			(project "Laptop"
-				(path "/37d3b3b1-ed71-45b6-86f1-0f4da120c1f5"
-					(page "11")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 150 195)
-		(size 90 60)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid 93ba10c1-b045-4bd9-a393-d22cab8b79bd)
-		(property "Sheetname" "Power_Rails"
-			(at 150 194.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "power_rails.kicad_sch"
-			(at 150 255.7 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "VSYS" input
-			(at 240 196.85 0)
-			(uuid bfa5ab10-c650-4225-b405-131defc686f9)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "AUX_EN" input
-			(at 240 200.66 0)
-			(uuid f5bde135-1455-46f9-8407-0735e92fbee7)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "EN_S0" input
-			(at 240 204.47 0)
-			(uuid f70eec34-cc6b-4412-a868-01badb682872)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "+5V_AUX" output
-			(at 240 208.28 0)
-			(uuid d8325ed5-e928-4530-9bc1-05121a588484)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "+3V3_AUX" output
-			(at 240 212.09 0)
-			(uuid 839ab7a6-cd54-4e90-8451-5dcfb3c60331)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "+5V" output
-			(at 240 215.9 0)
-			(uuid 03eac2a4-4965-43c5-a9ab-a8082bd3850d)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "+3V3" output
-			(at 240 219.71 0)
-			(uuid 4592ce14-2e86-45ae-a747-86d3f3b6403a)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "PG_AUX" output
-			(at 240 223.52 0)
-			(uuid 04d095d4-8bb1-4e54-99d5-c3af6e790068)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
-			)
-		)
-		(pin "PG_5V" output
-			(at 240 227.33 0)
-			(uuid 9aaf87aa-a9ad-4bec-967b-242bec650f58)
-			(effects
-				(font (size 1.27 1.27))
-				(justify right)
 			)
 		)
 		(instances
